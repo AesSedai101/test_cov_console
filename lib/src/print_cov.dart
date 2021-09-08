@@ -76,8 +76,6 @@ class _Data {
 /// [files] is the list of file in string that already filter by exclude params.
 void printCov(List<String> lines, List<FileEntity> files) {
   var idx = 0;
-  _print(PrintCovConstants.dash, PrintCovConstants.dash, PrintCovConstants.dash,
-      PrintCovConstants.dash, PrintCovConstants.dash, PrintCovConstants.dash);
   _print(
       PrintCovConstants.file,
       PrintCovConstants.branch,
@@ -169,8 +167,6 @@ void printCov(List<String> lines, List<FileEntity> files) {
       PrintCovConstants.dash, PrintCovConstants.dash, PrintCovConstants.dash);
   result[1].file = FileEntity(PrintCovConstants.allFiles);
   _printFile(result[1]);
-  _print(PrintCovConstants.dash, PrintCovConstants.dash, PrintCovConstants.dash,
-      PrintCovConstants.dash, PrintCovConstants.dash, PrintCovConstants.dash);
 }
 
 FileEntity _printDir(FileEntity file, String directory, bool printFile) {
