@@ -233,11 +233,11 @@ String _formatString(String input, int length, String more) {
 
 void _print(String file, String branch, String function, String lines,
     String uncovered, String filler) {
-  print('${file.padRight(PrintCovConstants.fileLen, filler)}|'
-      '${branch.padLeft(PrintCovConstants.percentLen, filler)}|'
-      '${function.padLeft(PrintCovConstants.percentLen, filler)}|'
-      '${lines.padLeft(PrintCovConstants.percentLen, filler)}|'
-      '${uncovered.padLeft(PrintCovConstants.uncoverLen, filler)}|');
+  print('| ${file.padRight(PrintCovConstants.fileLen, filler)} |'
+      ' ${branch.padLeft(PrintCovConstants.percentLen, filler)} |'
+      ' ${function.padLeft(PrintCovConstants.percentLen, filler)} |'
+      ' ${lines.padLeft(PrintCovConstants.percentLen, filler)} |'
+      ' ${uncovered.padLeft(PrintCovConstants.uncoverLen, filler)} |');
 }
 
 /// getFiles.
